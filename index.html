@@ -690,6 +690,84 @@
         href='https://themenectar.com/wp-content/cache/min/1/wp-content/themes/salient/css/salient-dynamic-styles-multi-id-1.css?ver=1732118905'
         type='text/css' media='all' />
     <style id='dynamic-css-inline-css' type='text/css'>
+
+        /* //imranchanges */
+          .hero-main {
+          
+           
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: space-between; /* Space between content */
+        width: 100%;
+        
+        margin-top: 5rem;
+        margin: auto;
+       
+       
+       
+        
+    }
+
+    /* Hero content: Text styling */
+    .hero-main-content {
+        padding-left: 17rem;
+      
+        display: flex;
+        flex-direction: column; /* Stack text vertically */
+        gap: 10px; /* Space between headings */
+    }
+
+    .hero-main-content h2 {
+        line-height: 4rem;
+        
+        padding: .1rem 0;
+        font-size: 6vw; /* Responsive font size */
+        font-weight: 600; /* Bold text */
+        margin: 0; /* Remove default margins */
+        line-height: 1.2; /* Improve readability */
+    }
+
+    /* Image: Responsive width */
+    #image {
+      width: 100%;
+      margin-left: 4.2rem;
+     
+    }
+
+    /* Media Query: For small screens (max-width: 768px) */
+    @media (max-width: 768px) {
+        .hero-main {
+            width: 100%;
+            
+            margin: 0;
+             padding-top: 3rem;
+            flex-direction: column; /* Stack vertically */
+            text-align: center; /* Center-align content */
+        }
+        .hero-main-content{
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero-main-content h2 {
+           
+            margin-top: 2.5rem;
+            font-size: 9vw; /* Larger font for smaller screens */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+        }
+
+        #image {
+            margin: 0;
+            padding: 0;
+        
+           width: 1200px;
+           height: 40vh;
+        }
+    }
+
+   
         @keyframes header_nav_entrance_animation {
             0% {
                 opacity: 0.01;
@@ -1389,24 +1467,7 @@
             html .font_size_phone_13vw.nectar-split-heading {
                 font-size: 13vw !important;
             }
-            .hero-main {
-            flex-direction: column; /* Stack items vertically */
-            text-align: center; /* Center-align content */
            
-            padding-right: 3.5rem;
-            padding-top: 4.5rem;
-            
-        }
-
-        .hero-main-content h2 {
-            text-align: center;
-
-          
-        }
-        #child1{
-            text-align: start;
-            padding-right: 1.2rem;
-        }
 
       
         }
@@ -3379,31 +3440,16 @@
                                                             <div class="vc_column-inner">
                                                                 <div class="wpb_wrapper hero-main">
                                                                     <!-- Main Heading -->
-                                                                    <div class=" hero-main-content nectar-split-heading font-style font_size_tablet_9vw font_size_phone_10vw font_line_height_0-9"
-                                                                        data-align="default" data-m-align="inherit"
-                                                                        data-text-effect="twist-bottom-2"
-                                                                        data-animation-type="line-reveal-by-space"
-                                                                        data-animation-delay="0"
-                                                                        data-animation-offset="" data-m-rm-animation=""
-                                                                        data-stagger="" data-custom-font-size="true"
-                                                                        style="font-size: 7vw; line-height: 7vw; margin: 0;">
-                                                                        <h2 class="ml-50" id="child1"
-                                                                            style="height: 10vh; margin-left: 300px; font-weight: 600; ">
-                                                                            TRANSFORMING</h2>
-                                                                        <h2 class="ml-50"
-                                                                            style="height: 10vh; margin-left: 220px; font-weight: 600; letter-spacing: 2px;">
-                                                                            IDEAS INTO </h2>
-                                                                        <h2 class="ml-50"
-                                                                            style="height: 10vh; margin-left: 220px; font-weight: 600; letter-spacing: 2px;">
-                                                                            BUSINESS</h2>
-
+                                                                    <div class="hero-main-content nectar-split-heading">
+                                                                        <h2 class="ml-50" id="child1">TRANSFORMING</h2>
+                                                                        <h2 class="ml-50">IDEAS INTO</h2>
+                                                                        <h2 class="ml-50">BUSINESS</h2>
                                                                     </div>
-                                                                                                                                <!-- <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum doloribus quo, deleniti repellendus cum, atque quibusdam, laboriosam distinctio ipsum eos laborum fuga quia rerum similique nulla dolorem perferendis exercitationem.</p> -->
-
+                                                                
+                                                                    <!-- Image -->
                                                                     <img src="./themenectar.com/img/demo-media/spinners/Remove background project (1).png"
-                                                                        alt="Description" width="200" height="150"
+                                                                        id="image" alt="Description"
                                                                         title="This is an image">
-                                                               
                                                                 </div>
                                                                 <!-- <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum doloribus quo, deleniti repellendus cum, atque quibusdam, laboriosam distinctio ipsum eos laborum fuga quia rerum similique nulla dolorem perferendis exercitationem.</p> -->
 
